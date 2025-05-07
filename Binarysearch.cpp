@@ -102,4 +102,15 @@ void binarySearch()
             cout << "\n========================================\n";
             cout << "     Elemen Array Setelah Diurutkan (Asc) \n";
             cout << "Masukkan elemen yang ingin dicari: ";
-            
+            cout << "\nIngin mencari lagi? (y/n): ";
+            cin >> ulang;
+        } while (ulang == 'y' || ulang == 'Y');
+    }
+    int main()
+    {
+        input();
+        bubbleSortArray();
+        display();
+        binarySearch();
+    }
+        
